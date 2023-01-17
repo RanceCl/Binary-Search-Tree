@@ -1,0 +1,46 @@
+lab5TestPlan
+Roderick "Rance" White
+roderiw
+ECE 2230 Fall 2020
+MP5
+
+Initially, separate recursive functions were going to be constructed for the BTS Insert, Search, and Remove functions. However, after noticing the similarities in each function, it was decided each operation would be conducted in the same loop, with only the remove function requiring a second function for ease. While this means that errors in the code will cause errors in all three functions, given how similar they were constructed, it was likely they would share these errors regardless and it would make them easier to repair. 
+
+The BTS Search function was constructed with a previous node for replacement purposes. However, after various errors, a solution was found in having the links of the list pointing to the value returned by the functions. 
+
+Using this method, the BTS insert, search, and remove were all tested, revealing an error where I had forgotten to include increases and decreases to the ItemCount for the Insert and Remove, which was easily solved. The Remove operation still had an error in its separate function, due to it forming a circular list if the removed node's right leaf had no left leaf. This was replaired by having an if statement for this scenario.
+
+The AVL operations and list were largely copied from the BST search function, with the only inclusion being the height variable for each node, the rotation functions, and a few conditionals to determine if and/or which rotations were necessary. The Balance Factor itself was going to be stored in the AVL nodes, though I found it was ultimately not useful for codeing, as height was much more useful for this purpose, and it wasn't going to displayed, so this was scrapped.
+
+While having the AVL functions as conditionals to the BST function was considered, I decided against it for fear of relying too much on the BST Search function and in case later testing indicated that I needed to change certain aspects of the AVL search function. The actual search operation used the BST search function as no rotations would be needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

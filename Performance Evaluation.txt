@@ -1,0 +1,11 @@
+lab5PerformanceEvaluation
+Roderick "Rance" White
+roderiw
+ECE 2230 Fall 2020
+MP5
+
+I chose to keep all the operations in the same loop do to how identical each was performed, making it easier to edit issues that they might have.
+
+The BST operations seem to function correctly and show no errors. 
+
+The AVL operations seem to run slower than the normal BST, as was to be expected, but otherwise functions somewhat in tests. The AVL does appear to have a few errors, as it fails when trying the equillibrium function. 
